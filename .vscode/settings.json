@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx.base.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx.controls.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx.fxml.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx.graphics.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx.media.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx.swing.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx.web.jar",
+        "c:\\Users\\yanis\\Downloads\\javafx-swt.jar",
+        "c:\\Users\\yanis\\Downloads\\jdk.jsobject.jar",
+        "c:\\Users\\yanis\\Downloads\\jfx.incubator.input.jar",
+        "c:\\Users\\yanis\\Downloads\\jfx.incubator.richtext.jar"
+    ]
+}
