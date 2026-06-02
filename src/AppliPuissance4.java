@@ -107,7 +107,7 @@ public class AppliPuissance4 extends Application {
                 Circle cercleVue = this.grilleCercles.get(ligne).get(col);
                 
                 if (valeurCase == 0) {
-                    cercleVue.setFill(Color.web("#222831")); // Trou vide (couleur du fond)
+                    cercleVue.setFill(Color.web("#222831")); 
                 } else if (valeurCase == 1) {
                     cercleVue.setFill(Color.RED);
                 } else {

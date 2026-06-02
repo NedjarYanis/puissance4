@@ -33,7 +33,7 @@ public class Puissance4 {
                 return true;
             }
         }
-        return false; // La colonne est pleine
+        return false; 
     }
 
     public void changerJoueur() {
@@ -48,7 +48,7 @@ public class Puissance4 {
         return this.nbJetonsPlaces == 42;
     }
 
-    // Algorithme le plus simpliste possible : on vérifie chaque case une par une
+    // on vérifie chaque case une par une
     public boolean estGagne() {
         for (int ligne = 0; ligne < 6; ligne++) {
             for (int col = 0; col < 7; col++) {
@@ -95,7 +95,7 @@ public class Puissance4 {
                 }
             }
         }
-        return false; // Si on a tout fouillé et rien trouvé
+        return false; 
     }
 
     public List<List<Integer>> getGrille() { return this.grille; }
