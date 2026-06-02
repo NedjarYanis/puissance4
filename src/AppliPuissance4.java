@@ -134,14 +134,14 @@ public class AppliPuissance4 extends Application {
         alert.setTitle("Fin de partie");
         alert.setHeaderText("Victoire !");
         String couleurGagnant = (this.modele.getJoueurCourant() == 1) ? "Rouge" : "Jaune";
-        alert.setContentText("Le joueur " + couleurGagnant + " est un tigre");
+        alert.setContentText("Le joueur " + couleurGagnant + " est un fils de pute");
         return alert;
     }
 
     public Alert popUpMatchNul() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Fin de partie");
-        alert.setHeaderText("Epchtein");
+        alert.setHeaderText("Epstein");
         alert.setContentText("tes un paff");
         return alert;
     }
