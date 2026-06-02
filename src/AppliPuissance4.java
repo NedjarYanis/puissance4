@@ -3,6 +3,8 @@ import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -133,6 +135,16 @@ public class AppliPuissance4 extends Application {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Fin de partie");
         alert.setHeaderText("Victoire !");
+        Image imageVictoire = new Image("file:src/logo_VS.png");
+
+        ImageView imageView = new ImageView(imageVictoire);
+
+        imageView.setFitHeight(60); 
+        imageView.setFitWidth(60);
+        imageView.setPreserveRatio(true);
+
+        alert.setGraphic(imageView);
+
         String couleurGagnant = (this.modele.getJoueurCourant() == 1) ? "Rouge" : "Jaune";
         alert.setContentText("Le joueur " + couleurGagnant + " a gagner ");
         return alert;
@@ -141,8 +153,8 @@ public class AppliPuissance4 extends Application {
     public Alert popUpMatchNul() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Fin de partie");
-        alert.setHeaderText("Epstein");
-        alert.setContentText("tes un paff");
+        alert.setHeaderText("tu a perdu");
+        alert.setContentText("dommage");
         return alert;
     }
 }
