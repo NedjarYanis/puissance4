@@ -134,7 +134,7 @@ public class AppliPuissance4 extends Application {
         alert.setTitle("Fin de partie");
         alert.setHeaderText("Victoire !");
         String couleurGagnant = (this.modele.getJoueurCourant() == 1) ? "Rouge" : "Jaune";
-        alert.setContentText("Le joueur " + couleurGagnant + " est un fils de pute");
+        alert.setContentText("Le joueur " + couleurGagnant + " a gagner ");
         return alert;
     }
 
