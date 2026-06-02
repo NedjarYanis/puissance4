@@ -14,7 +14,28 @@ public class ControleurColonne implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent e) {
-        this.modele.jouerJeton(this.colonne);
-        this.vue.majAffichage();
+        boolean coupValide = this.modele.jouerJeton(this.colonne);
+        
+        if (coupValide) {
+            this.vue.majAffichage();
+            
+            // On vérifie d'abord si quelqu'un a gagné
+            if (this.modele.estGagne()) {
+                this.vue.popUpVictoire().showAndWait();
+                this.modele.reinitialiser();
+                this.vue.majAffichage();
+            } 
+            // Sinon on vérifie si c'est plein
+            else if (this.modele.estPlein()) {
+                this.vue.popUpMatchNul().showAndWait();
+                this.modele.reinitialiser();
+                this.vue.majAffichage();
+            } 
+            // Sinon on continue le jeu
+            else {
+                this.modele.changerJoueur();
+                this.vue.majAffichage(); 
+            }
+        }
     }
 }
